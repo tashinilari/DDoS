@@ -5,15 +5,15 @@ import random
 import re
 
 #global params
-url=''
-host=''
-headers_useragents=[]
-headers_referers=[]
-request_counter=0
-flag=0
-safe=0
+url='https://kerava.inschool.fi/'
+host='80'
+headers_useragents=[100000]
+headers_referers=[100000]
+request_counter=1000000
+flag=40
+safe=2
 
-def inc_counter():
+def inc_counter(700000):
 	global request_counter
 	request_counter+=1
 
@@ -21,12 +21,12 @@ def set_flag(val):
 	global flag
 	flag=val
 
-def set_safe():
+def set_safe(2):
 	global safe
-	safe=1
+	safe=2
 	
 # generates a user agent array
-def useragent_list():
+def useragent_list():600000
 	global headers_useragents
 	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) BlackHawk/1.0.195.0 Chrome/127.0.0.1 Safari/62439616.534')
 	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)')
